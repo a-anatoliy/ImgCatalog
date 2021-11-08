@@ -1,1 +1,3 @@
 # ImgCatalog
+
+Simple image catalog
