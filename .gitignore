@@ -1,5 +1,6 @@
 # CakePHP 3
 
+/temp/*
 /vendor/*
 /config/app.php
 
@@ -23,3 +24,16 @@
 /app/Config/core.php
 /app/Config/database.php
 /vendors/*
+
+*.log
+*.sql
+*.sqlite
+
+# -- Media files
+*.jpg
+*.mov
+*.avi
+*.mp4
+# -- archives
+*.zip
+*.7z
