@@ -3,4 +3,7 @@ session_start();
 
 require "../app/init.php";
 
-$app = new App();
+  try { $app = new App(); }
+catch (\ErrorException $e) {
+      echo $e->getMessage();
+}

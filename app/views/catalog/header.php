@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?=$data['page_title'] . " | " . WEBSITE_TITLE?></title>
-    <link rel="stylesheet" href="<?=ASSETS?>catalog/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?=ASSETS?>catalog/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="<?=ASSETS?>catalog/css/templatemo-style.css">
-<!--
-
-
--->
+    <meta name="robots" content="index">
+    <meta name="author" content="Yukai">
+    <meta property="fb:app_id" content="453526095028535" />
+    <meta property="og:url" content="https://lucky-dress.eu" />
+    <meta property="og:type" content="website" />
+    <meta property="article:author" content="Lucky DRESS" />
+    <meta property="article:publisher" content="https://www.facebook.com/luckydresskrakow/" />
+    <meta property="og:title" content="Lucky DRESS - Atelier" />
+    <meta property="og:description" content="Wedding, evening and cocktail dresses" />
+    <meta property="og:image" content="http://www.luckydress.eu/i/aboutus03.jpg" />
+    <meta property="og:image:secure_url" content="http://www.luckydress.eu/i/aboutus03.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="361" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="pl_PL" />
+    <meta property="og:site_name" content="Fashion" />
+    <meta itemprop="name" content="Lucky DRESS - Atelier" />
+    <meta itemprop="description" content="Wedding, evening and cocktail dresses" />
+    <meta itemprop="image" content="http://www.luckydress.eu/i/aboutus03.jpg" />
+    <title><?=$data['page_title'] . " | " . $GLOBALS['cfg']['site']['orgName']?></title>
+    <link rel="stylesheet" href="/public/assets/catalog/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/assets/catalog/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/public/assets/catalog/css/templatemo-style.css">
 </head>
 <body>
     <!-- Page Loader -->
@@ -25,14 +41,14 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <i class="fas fa-film mr-2"></i>
-                
-                <?=WEBSITE_TITLE?> 
-                <?php 
+
+                <?=$GLOBALS['cfg']['site']['orgName']?>
+                <?php
 
                     echo isset($_SESSION['user_email']) ? "<span style='font-size:14px;'> | Hi, " . $_SESSION['user_email'] . '</span>': "";
-                   
+
                 ?>
-                
+
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>

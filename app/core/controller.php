@@ -10,9 +10,7 @@ Class Controller {
 	}
 
 	public function loadModel($model) {
-
 		if(file_exists("../app/models/". strtolower($model) . ".php")) {
-
 			include "../app/models/". strtolower($model). ".php";
 			return $model = new $model();
 		}
